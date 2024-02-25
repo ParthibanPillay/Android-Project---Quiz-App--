@@ -1,0 +1,145 @@
+* {
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(252, 252, 252);
+    background-image: linear-gradient(to bottom right,#0c147b,#6c1786,#812c7b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* css for header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 70px;
+    
+}
+
+.header h2{
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+/* user-account */
+.user {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 15px;
+    background-color: grey;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.user h2 {
+    font-size: 20px;
+}
+
+/* rounds css */
+.container{
+    text-decoration-color: aliceblue;
+    margin-top: 10px;
+}
+.round {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 0px;
+    background-color:rgb(195, 163, 224);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color:gray;
+}
+.rounds {
+    display: flex;
+    justify-content: space-around;
+}
+.round {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #89dcff;
+    color:rgb(24, 45, 102);
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.round p {
+    padding-top: 70px;
+}
+.round:hover {
+    background-color:#2467af;
+    color:rgb(255, 255, 255);
+
+}
+
+/* graphics animation */
+.graphic {
+    display: flex;
+    position: relative;
+    animation: floating ease 4s infinite;
+}
+
+.tick {
+    width: 250px;
+    height: 250px;
+    rotate: 20deg;
+    margin-top: 350px;
+    margin-left: 1000px;
+    position: absolute;
+}
+
+.cross {
+    height: 250px;
+    width: 250px;
+    margin-top: 75px;
+    margin-left: 1000px;
+    position: absolute;
+}
+.question {
+    rotate: 320deg;
+    margin-top: 350px;
+    position: absolute;
+}
+.idea {
+    margin-top: 50px;
+    rotate: 320deg;
+    position: absolute;
+}
+
+.size {
+    width: 300px;
+    height: 300px;
+}
+
+@keyframes floating {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 30px; /* Moves halfway down the viewport */
+    }
+    100% {
+      top: 0; /* Returns to the top */
+    }
+  }
+
